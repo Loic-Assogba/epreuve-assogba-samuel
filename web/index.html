@@ -3,7 +3,55 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Epreuve B2</title>
+        <title>Mon site</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <h1>Mon Site Web</h1>
+
+            <nav>
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Bienvenue</h2>
+                <p>Bienvenue sur notre site web.</p>
+
+                <article>
+                    <h3>Notre présentation</h3>
+                    <p>Nous proposons des services de qualité.</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Inscription</h2>
+
+                <form>
+                    <label>Nom :</label>
+                    <input type="text" required />
+
+                    <label>Email :</label>
+                    <input type="email" required />
+
+                    <label>Mot de passe :</label>
+                    <input type="password" minlength="8" required />
+
+                    <label>Pays :</label>
+                    <select>
+                        <option>Bénin</option>
+                        <option>Togo</option>
+                        <option>France</option>
+                        <option>Côte d'Ivoire</option>
+                    </select>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
+    </body>
 </html>
