@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-primary: #f97316;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    background: #f97316;
+    color: white;
+    padding: 8px 15px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+li {
+    margin: 12px 0;
+}
