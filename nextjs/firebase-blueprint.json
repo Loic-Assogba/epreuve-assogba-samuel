@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "Book": {
+      "title": "Book",
+      "description": "Représente un livre enregistré dans la bibliothèque numérique BookManager.",
+      "type": "object",
+      "properties": {
+        "titre": {
+          "type": "string",
+          "description": "Titre du livre (obligatoire).",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "auteur": {
+          "type": "string",
+          "description": "Nom de l'auteur du livre (obligatoire).",
+          "minLength": 1,
+          "maxLength": 150
+        },
+        "annee": {
+          "type": "integer",
+          "description": "Année de publication du livre (facultative)."
+        },
+        "ownerId": {
+          "type": "string",
+          "description": "Identifiant Firebase Auth UID du propriétaire du livre.",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Date et heure serveur d'enregistrement du livre."
+        }
+      },
+      "required": ["titre", "auteur", "ownerId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/books/{bookId}": {
+      "schema": {
+        "$ref": "#/entities/Book"
+      },
+      "description": "Collection des livres appartenant à chaque utilisateur authentifié."
+    }
+  }
+}

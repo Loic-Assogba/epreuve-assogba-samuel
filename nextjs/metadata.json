@@ -1,0 +1,6 @@
+{
+  "name": "BookManager",
+  "description": "Une bibliothèque numérique simple, moderne et efficace pour enregistrer et consulter votre collection de livres.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
